@@ -9,7 +9,6 @@
     exports.getRequest = function(url,options){
       if(url){
           requestify.get(url,options).then(function(response){
-
              console.log(response.getBody());
           })
       }
