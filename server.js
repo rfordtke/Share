@@ -6,12 +6,9 @@ exports.getRequest = function (url, options) {
         requestify.get(url, options)
             .then(function (err, response) {
                 if (err) {
+                    console.log(err);
                     return err;
                 } else {
-                    var obj = response.getBody();
-                    console.log(obj);
-                    console.log(obj.length)
-
                     return response.getBody();
                 }
             })
