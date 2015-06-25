@@ -9,7 +9,7 @@ exports.getRequest = function (url, options) {
                     console.log(err);
                     return err;
                 } else {
-                    return response.getBody();
+                    return response.body;
                 }
             })
     }
